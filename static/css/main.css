@@ -1,0 +1,51 @@
+/* Set the font family and font size for the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Set the background color for the page */
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Set the styles for the main content area */
+  main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Set the styles for the blog post title */
+  h2.blog-post-title {
+    margin-top: 0;
+  }
+  
+  /* Set the styles for the blog post metadata (author, date, etc.) */
+  .blog-post-meta {
+    font-style: italic;
+    color: #6c757d;
+  }
+  
+  /* Set the styles for the comments section */
+  .comments {
+    margin-top: 40px;
+  }
+  
+  /* Set the styles for the comment form */
+  .comment-form {
+    margin-top: 20px;
+  }
+  
+  /* Set the styles for the comment input fields */
+  .comment-form input[type="text"],
+  .comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Set the styles for the comment submit button */
+  
