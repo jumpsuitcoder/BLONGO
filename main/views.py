@@ -12,6 +12,7 @@ def post_list(request):
         return render(request, 'main/post_list.html', {'posts': posts})
     except:
         traceback.print_exc()
+        return render(request, 'main/error.html')
 
 def post_detail(request, pk):
     try:
@@ -30,6 +31,7 @@ def post_detail(request, pk):
         return render(request, 'main/post_detail.html', {'post': post, 'comments': comments, 'comment_form': comment_form})
     except:
         traceback.print_exc()
+        return render(request, 'main/error.html')
 
 @login_required
 def post_new(request):
@@ -47,6 +49,7 @@ def post_new(request):
         return render(request, 'main/form_new.html', {'form_new': post_form, 'form_title': 'New Post' })
     except:
         traceback.print_exc()
+        return render(request, 'main/error.html')
 
 @login_required
 def post_edit(request, pk):
@@ -65,6 +68,7 @@ def post_edit(request, pk):
         return render(request, 'main/form_edit.html', {'form_edit': post_form, 'form_title': form_title})
     except:
         traceback.print_exc()
+        return render(request, 'main/error.html')
 
 
 @login_required
@@ -86,3 +90,4 @@ def add_comment_to_post(request, post_id):
         return render(request, 'main/add_comment_to_post.html', {'post': post, 'form': form})
     except:
         traceback.print_exc()
+        return render(request, 'main/error.html')

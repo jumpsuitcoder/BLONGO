@@ -21,6 +21,15 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'main:post_new' %}">New post</a>
         </li>
+        {%if not user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:login' %}">Login</a>
+        </li>
+        {%else%}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:logout' %}">Logout</a>
+        </li>
+        {%endif%}
       </ul>
     </div>
   </nav>
