@@ -14,6 +14,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_comments(self):
+        return Comment.objects.filter(post=self.pk)
 
 
 class Comment(models.Model):

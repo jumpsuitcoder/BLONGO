@@ -10,12 +10,11 @@
 
   <h2>Comments</h2>
   {% for comment in post.comments.all %}
-    {% if comment.approved_comment %}
       <div class="comment">
         <p class="info">{{ comment.author }} on {{ comment.created_date }}</p>
         <p>{{ comment.text|linebreaksbr }}</p>
+        {% if comment.approved_comment %}<small><i><b>approved</b></i></small>{% endif %}
       </div>
-    {% endif %}
   {% empty %}
     <p>There are no comments yet.</p>
   {% endfor %}
