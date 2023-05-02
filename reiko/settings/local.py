@@ -4,6 +4,8 @@ load_dotenv()
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
+CSRF_TRUSTED_ORIGINS = os.environ.get("DJANGO_CSRF_TRUSTED_ORIGINS").split(" ")
+
 DEBUG = True
 
 DATABASES = {
