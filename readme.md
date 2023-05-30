@@ -17,7 +17,7 @@ Start Command gunicorn reiko.wsgi:application
 
 ## Git COMMANDS
 git branch -M main
-git remote add origin https://github.com/subham2023/reikoblog.git
+git remote add origin https://github.com/subham2023/blongo.git
 git push -u origin main
 
 
